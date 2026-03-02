@@ -1,8 +1,5 @@
 Web Scraping – Multitrabajos
 
-Este proyecto tiene como objetivo extraer información estructurada desde la página pública de Multitrabajos Ecuador, específicamente del listado de empresas que publican ofertas laborales.
-Debido a que la página está construida con tecnología JavaScript, el contenido no puede ser extraído mediante métodos tradicionales como requests y BeautifulSoup. Por esta razón, se implementó Selenium para simular un navegador real y capturar el contenido dinámico renderizado.
-
 Librerías Utilizadas:
 - Selenium:Permite simular un navegador real para renderizar contenido dinámico generado por JavaScript.
 - re (Expresiones Regulares):Utilizada para identificar patrones dentro del texto y extraer valores numéricos como:
