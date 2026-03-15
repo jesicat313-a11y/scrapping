@@ -1,3 +1,8 @@
+Integrantes
+
+Fausto Almeida
+Ángel Toapanta
+Jessica Tipantuña
 ## Web Scraping – Multitrabajos
 
 Librerías Utilizadas:
