@@ -46,3 +46,9 @@ Visualización
 A partir de los datos limpios se generaron:
 - Top 10 provincias con mayor cantidad de empleos disponibles.
 - Top 10 empresas con mayor número de avisos activos.
+## SECCIÓN DE RESPUESTA A COMENTARIOS
+3.	Si la estructura de Multitrabajos cambia o implementa mecanismos anti-scraping, ¿qué estrategias técnicas y de diseño podrían aplicar para mantener su solución funcional, escalable y fácil de adaptar sin tener que reescribir todo el código?
+
+Se diseñaría una arquitectura desacoplada, para no es escribir código más complejo, definiríamos estrategias genéricas si cambia la estructura HTML crearíamos una nueva estrategia de extracción y solo cambiaria el módulo de entrada. Esto de la mano con la implementación de archivos de configuración JSON para mapear los campos, así se evitaría colocar selectores CSS en las funciones, si cambiara la página web el nombre de sus clases, se actualizaría el archivo JSON y no se recompilaría la lógica de programación
+
+Otra opción es utilizar Playwright que simula la navegación de un usuario normal, así también está diseñada para renderizar JS, y si se convierte en renderizado ya dinámico, es decir cambia de funciones de etiqueta y maquetado automáticamente como FB y TIK TOK, se podría crear una estrategia más avanzada como: Transportar sesiones de inicio de sesión similares a FAKE AUTH y extraer el contenido a través de Playwright, es importante indicar que para realizar esto se debería emplear chicken ip de hasta 3 saltos con el propósito de no ser bloqueado y poder consumir la información.
