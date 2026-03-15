@@ -1,4 +1,4 @@
-Web Scraping – Multitrabajos
+## Web Scraping – Multitrabajos
 
 Librerías Utilizadas:
 - Selenium:Permite simular un navegador real para renderizar contenido dinámico generado por JavaScript.
@@ -9,7 +9,7 @@ Librerías Utilizadas:
 -  pandas: Permite estructurar los datos en un DataFrame, limpiar la información y procesarla para análisis posterior.
 -  matplotlib:Se utiliza para generar visualizaciones gráficas de los datos obtenidos.
 
-Proceso de extracción 
+## Proceso de extracción 
 - Se construyó un navegador automatizado con Selenium.
 - Se definió la URL base y el número de páginas a recorrer (10).
 - Para cada página:
@@ -21,14 +21,14 @@ Proceso de extracción
   - Se almacenó la información en una lista de diccionarios.
   - Finalmente, se creó un DataFrame estructurado con todos los datos obtenidos.
 
-Campos extraídos
+## Campos extraídos
 - De cada empresa se obtuvieron los siguientes datos:
 - Empresa → Nombre de la organización.
 - AvisosActivos → Número de vacantes disponibles.
 - Provincia → Ubicación geográfica.
 - Empleados → Rango de empleados reportado.
 
-Limpieza y Normalización
+## Limpieza y Normalización
 Para garantizar calidad en los datos se realizó:
 - Eliminación de espacios innecesarios.
 - Conversión de valores numéricos.
@@ -41,7 +41,7 @@ Se generaron dos archivos:
 -  multitrabajos_empresas.csv (datos originales)
 -  multitrabajos_empresas_clean.csv (datos procesados)
 
-Visualización
+## Visualización
 
 A partir de los datos limpios se generaron:
 - Top 10 provincias con mayor cantidad de empleos disponibles.
